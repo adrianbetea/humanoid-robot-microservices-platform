@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservices Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/state_index.html">Robot State</a></li>
+        <li><a href="pages/control_index.html">Robot Control</a></li>
+        <li><a href="pages/task_index.html">Robot Task</a></li>
+        <li><a href="pages/simulation_index.html">Simulation</a></li>
+        <li><a href="pages/monitoring_index.html">Monitoring</a></li>
+        <li style="float:right"><a href="./pages/about_index.html">About</a></li>
+    </nav>
+
+    <div>
+        <div class="title-container">
+            <h2>Talos Humanoid Brain Dashboard</h2>
+            <img src="/assets/schaeffler_logo.png" alt="Schaeffler Logo" class="logo">
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <div class="system-overview-container">
+                <h3>System Overview</h3>
+                <div class="overview-flex">
+                    <div class="overview-card">
+                        <p>Robot Status</p>
+                    </div>
+                    <div class="overview-card">
+                        <p>Isaac Sim Status</p>
+                    </div>
+                    <div class="overview-card">
+                        <p>AI Status</p>
+                    </div>
+                    <div class="overview-card">
+                        <p>Simulation Status</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-overview">
+                <h3>Active task</h3>
+                <div class="info-card">
+                    <p>move cube from A to B</p>
+                    <p>status: running</p>
+                    <p>progress qwen -> GR00T -> execution</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="access-container">
+            <h3>Quick Access</h3>
+            <div class="access-list">
+                <a href="pages/state_index.html" style="text-decoration:none">
+                    <div class="access-card">
+                        <img src="/assets/state-service-logo.jpg" alt="State Service">
+                        <p>Robot State Service</p>
+                    </div>
+                </a>
+                <a href="pages/control_index.html" style="text-decoration:none">
+                    <div class="access-card">
+                        <img src="/assets/control-service-logo.jpg" alt="Control Service">
+                        <p>Robot Control Service</p>
+                    </div>
+                </a>
+                <a href="pages/task_index.html" style="text-decoration:none">
+                    <div class="access-card">
+                        <img src="/assets/task-service-logo.jpg" alt="Task Service">
+                        <p>Robot Task Service</p>
+                    </div>
+                </a>
+                <a href="pages/simulation_index.html" style="text-decoration:none">
+                    <div class="access-card">
+                        <img src="/assets/simulation-service-logo.jpg" alt="Simulation Service">
+                        <p>Robot Simulation Service</p>
+                    </div>
+                </a>
+                <a href="pages/simulation_index.html" style="text-decoration:none">
+                    <div class="access-card">
+                        <img src="/assets/monitoring-service-logo.jpg" alt="Monitoring Service">
+                        <p>Robot Monitoring Service</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom-container">
+            <div class="recent-events-container">
+                <h3>Recent Events</h3>
+                <ul>
+                    <li>Stoppedx</li>
+                    <li>Started y</li>
+                    <li>Monitoring started</li>
+                    <li>Stoppedx</li>
+                </ul>
+            </div>
+
+            <div class="emergency-stop">
+                <p>EMERGENCY STOP</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

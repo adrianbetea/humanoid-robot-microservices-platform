@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+}
+
+body::after {
+  content: "";
+  background-image: url("assets/schaeffler-background.jpg");
+  background-size: 100%;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #534d4d;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111111;
+}
+
+.navbar li a.active {
+  background-color: #04AA6D;
+}
+
+.navbar li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.title-container .logo {
+  align-self: center;
+  height: 40px;
+  width: 200px;
+}
+
+.system-overview-container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  width: 50%;
+}
+
+.system-overview-container .overview-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+.system-overview-container .overview-flex .overview-card {
+  width: 180px;
+  height: 140px;
+  border: 1px solid #04AA6D;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  background-color: #04AA6D;
+  color: #fff;
+  justify-items: left; 
+  opacity: 90%;
+}
+
+.task-overview {
+  padding-left: 20px;
+  width: 40%;
+}
+
+.task-overview .info-card {
+  width: 60%;
+  height: 140px;
+  border: 1px solid #04AA6D;
+  border-radius: 10px;
+  padding-inline: 10px;
+  background-color: #84947a;
+  opacity: 90%;
+}
+
+.access-container {
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 100%
+}
+
+.access-container .access-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 40px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.access-container .access-list .access-card {
+  width: 300px;
+  height: 240px;
+  border: 1px solid #04AA6D;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #84947a;
+  color: #e7e7e7;
+}
+
+.access-container .access-list .access-card:hover {
+  transform: scale(1.1);
+  background-color: #9ebf89;
+}
+
+.access-container .access-list .access-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.bottom-container {
+  padding-inline: 20px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-container .recent-events-container {
+  border: 2px solid #534d4d;
+  width: 400px;
+  padding: 5px;
+}
+
+.bottom-container .emergency-stop {
+  margin-top: 100px;
+  margin-right: 20px;
+  width: 250px;
+  height: 70px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(255, 38, 0);
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.bottom-container .emergency-stop:hover {
+  background-color: rgb(213, 45, 15);
+}
